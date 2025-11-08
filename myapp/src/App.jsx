@@ -4,6 +4,7 @@
 // import './App.css'
 
 import HelloWorld from "./core-concepts/01-helloWorld/HelloWorld";
+import Welcome from "./core-concepts/02-componenets/functionGreetings";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -38,7 +39,8 @@ import HelloWorld from "./core-concepts/01-helloWorld/HelloWorld";
 
 
 function App(){
-  return <HelloWorld/>
+  //return <HelloWorld/>
+  return <Welcome/>
 }
 
 export default App
