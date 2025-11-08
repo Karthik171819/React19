@@ -6,6 +6,7 @@
 import HelloWorld from "./core-concepts/01-helloWorld/HelloWorld";
 import Greeting from "./core-concepts/02-componenets/classGreeting";
 import Welcome from "./core-concepts/02-componenets/functionGreetings";
+import JSXExample from "./core-concepts/03-jsx/JSXExample";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -42,7 +43,8 @@ import Welcome from "./core-concepts/02-componenets/functionGreetings";
 function App(){
   //return <HelloWorld/>
   //return <Welcome/>
-  return <Greeting/>
+  //return <Greeting/>
+  return<JSXExample/>
 }
 
 export default App
