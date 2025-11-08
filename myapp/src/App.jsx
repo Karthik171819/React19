@@ -3,7 +3,7 @@
 // import viteLogo from '/vite.svg'
 // import './App.css'
 
-import HelloWorld from "./core-concepts/helloWorld/HelloWorld";
+import HelloWorld from "./core-concepts/01-helloWorld/HelloWorld";
 
 // function App() {
 //   const [count, setCount] = useState(0)
