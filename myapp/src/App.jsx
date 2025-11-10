@@ -7,6 +7,7 @@ import HelloWorld from "./core-concepts/01-helloWorld/HelloWorld";
 import Greeting from "./core-concepts/02-componenets/classGreeting";
 import Welcome from "./core-concepts/02-componenets/functionGreetings";
 import JSXExample from "./core-concepts/03-jsx/JSXExample";
+import Props from "./core-concepts/04-prpos/PropsEx";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -44,7 +45,8 @@ function App(){
   //return <HelloWorld/>
   //return <Welcome/>
   //return <Greeting/>
-  return<JSXExample/>
+ // return<JSXExample/>
+ return<Props  name = "Karthik this is props"/>
 }
 
 export default App
