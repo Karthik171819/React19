@@ -8,6 +8,8 @@ import Greeting from "./core-concepts/02-componenets/classGreeting";
 import Welcome from "./core-concepts/02-componenets/functionGreetings";
 import JSXExample from "./core-concepts/03-jsx/JSXExample";
 import Props from "./core-concepts/04-prpos/PropsEx";
+import StateExample from "./core-concepts/05-state/stateExample";
+
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -45,8 +47,9 @@ function App(){
   //return <HelloWorld/>
   //return <Welcome/>
   //return <Greeting/>
- // return<JSXExample/>
- return<Props  name = "Karthik this is props"/>
+ // return <JSXExample/>
+ //return <Props  name = "Karthik this is props"/>
+    return <StateExample/>
 }
 
 export default App
