@@ -9,6 +9,7 @@ import Welcome from "./core-concepts/02-componenets/functionGreetings";
 import JSXExample from "./core-concepts/03-jsx/JSXExample";
 import Props from "./core-concepts/04-prpos/PropsEx";
 import StateExample from "./core-concepts/05-state/stateExample";
+import EventHandle from "./core-concepts/06-event-handling/eventHandler";
 
 
 // function App() {
@@ -47,9 +48,10 @@ function App(){
   //return <HelloWorld/>
   //return <Welcome/>
   //return <Greeting/>
- // return <JSXExample/>
- //return <Props  name = "Karthik this is props"/>
-    return <StateExample/>
+  //return <JSXExample/>
+  //return <Props  name = "Karthik this is props"/>
+  //return <StateExample/>
+  return <EventHandle/>
 }
 
 export default App
