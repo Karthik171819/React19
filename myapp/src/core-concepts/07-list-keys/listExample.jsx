@@ -1,5 +1,13 @@
 export default function ListExample () {
+    const items = ['Apple', 'Banana', 'Cherry'];
+
     return<>
-        <h1>Example</h1>
+        <h1>List Example</h1>
+        <ul>
+            { items.map((item, index) =>{
+              return<li key={index}>{item}</li>   
+            }) }
+            
+        </ul>
     </>
 }
