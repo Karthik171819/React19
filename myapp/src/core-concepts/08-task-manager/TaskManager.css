@@ -28,6 +28,17 @@
     border:5px solid grey;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
 }
 
+
+.task-ul .delete {
+    background-color: red;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+}
