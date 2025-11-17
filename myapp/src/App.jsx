@@ -12,6 +12,7 @@ import StateExample from "./core-concepts/05-state/stateExample";
 import EventHandle from "./core-concepts/06-event-handling/eventHandler";
 import SimpleForm from "./core-concepts/06-event-handling/simpleForm";
 import ListExample from "./core-concepts/07-list-keys/listExample";
+import TaskManager from "./core-concepts/08-task-manager/TaskManager";
 
 
 // function App() {
@@ -55,7 +56,8 @@ function App(){
   //return <StateExample/>
   //return <EventHandle/>
   //return <SimpleForm/>
-  return <ListExample/>
+  //return <ListExample/>
+  return <TaskManager/>
 }
 
 export default App
