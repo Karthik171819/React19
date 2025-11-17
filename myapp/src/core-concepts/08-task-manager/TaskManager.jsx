@@ -5,10 +5,10 @@ import "./TaskManager.css"
 export default function TaskManager() {
     const [tasks, setTasks] = useState([]);
     return (
-        <diV>
+        <div>
             <h1>Task Manager</h1>
             <TaskForm/>
             <p>Tasks: {tasks.length}</p>
-        </diV>
+        </div>
     );
 }
