@@ -12,7 +12,7 @@ export default function TaskManager() {
     return (
         <div>
             <h1>Task Manager</h1>
-            <TaskForm/>
+            <TaskForm addTask={addTask}/>
             <p>Tasks: {tasks.length}</p>
         </div>
     );

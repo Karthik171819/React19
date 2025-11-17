@@ -1,11 +1,13 @@
 import { useState } from "react";
-export default function TaskForm() {
+export default function TaskForm({addTask}) {
     const [value, setValue] = useState("");
     const handleSubmit = (event) =>{
         event.preventDefault();
 
         if(value.trim()){
             console.log("form Submitted", value)
+            //add task list
+            addTask(value);
             setValue("")
         }
         
