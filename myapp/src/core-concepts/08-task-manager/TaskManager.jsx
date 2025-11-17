@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TaskForm from "./TaskForm";
+import TaskList from "./TaskList";
 import "./TaskManager.css"
 
 export default function TaskManager() {
@@ -13,6 +14,7 @@ export default function TaskManager() {
         <div>
             <h1>Task Manager</h1>
             <TaskForm addTask={addTask}/>
+            <TaskList tasks={tasks}/>
             <p>Tasks: {tasks.length}</p>
         </div>
     );
