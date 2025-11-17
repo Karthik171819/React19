@@ -12,3 +12,9 @@
     border-radius: 10px;
 
 }
+
+.add-task-action {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
