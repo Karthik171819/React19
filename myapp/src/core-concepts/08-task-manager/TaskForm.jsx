@@ -9,8 +9,7 @@ export default function TaskForm({addTask}) {
             //add task list
             addTask(value);
             setValue("")
-        }
-        
+        }   
     }
     return(
         <div>
