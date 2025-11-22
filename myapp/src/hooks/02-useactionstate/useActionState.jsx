@@ -3,11 +3,16 @@ import { useActionState } from "react";
 export default function UseActionState() {
 
     async function submitForm(previousState, formData) {
-        await new Promise((res) => setTimeout(res, 5000));
+        await new Promise((res) => setTimeout(res, 1000));
 
+        //already login check
+        if (previousState == "Login Success"){
+            return "You are already login";
+        }
         if (
             formData.get("username") === "karthik" &&
             formData.get("password") === "1234"
+            
         ) {
             return "Login Success";
         } else {
@@ -17,7 +22,7 @@ export default function UseActionState() {
 
 }
 
-    const [state, formAction] = useActionState(submitForm, "Fill the form fields");
+    const [state, formAction, isPending] = useActionState(submitForm, "Fill the form fields");
 
     return (
         <div>
@@ -39,7 +44,7 @@ export default function UseActionState() {
                 <button type="submit" style={{marginTop:"10px "}}>Submit</button>
             </form>
 
-            <p>{state}</p>
+            <p>{isPending ? "Please wait Loading...it may take upto few seconds..." : state}</p>
         </div>
     );
 }
