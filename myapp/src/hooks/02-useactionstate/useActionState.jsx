@@ -1,30 +1,45 @@
-export default function UseActionState(){
+import { useActionState } from "react";
 
- async   function submitForm(previousState, formData){
-    await new Promise((res, rej) => setTimeout(res, 5000));
-    if(formData.get("username") == "karthik" && formData.get("Password") == "1234"){
-        return "Login Success";
+export default function UseActionState() {
+
+    async function submitForm(previousState, formData) {
+        await new Promise((res) => setTimeout(res, 5000));
+
+        if (
+            formData.get("username") === "karthik" &&
+            formData.get("password") === "1234"
+        ) {
+            return "Login Success";
+        } else {
+
+        return "invalid credentials";
     }
 
-    return "invalid credentials";
 }
 
-const [state, formAction] = useActionState(submitForm, "Fill the form fields")
+    const [state, formAction] = useActionState(submitForm, "Fill the form fields");
 
-    return <div>
-        <h1>Use Action State</h1>
-        <form action={formAction}>
-            <div style={{display:"flex", flexDirection:"column"}}></div>
-            <label htmlFor="">Username
-                <input type='text' name='username'  id=''/>
-            </label>
+    return (
+        <div>
+            <h1>Use Action State</h1>
+            <form action={formAction}>
+                
+                <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+                    <label>
+                        Username
+                        <input type="text" name="username" />
+                    </label>
 
-             <label htmlFor="">Password
-                <input type='text' name="Password"  id=''/>
-            </label>
+                    <label>
+                        Password
+                        <input type="password" name="password"  />
+                    </label>
+                </div>
 
-            <button type='submit'> Submit</button>
-        </form>
-        <p>{state}</p>
-    </div>
+                <button type="submit" style={{marginTop:"10px "}}>Submit</button>
+            </form>
+
+            <p>{state}</p>
+        </div>
+    );
 }
