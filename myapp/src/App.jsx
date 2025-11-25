@@ -15,6 +15,7 @@ import ListExample from "./core-concepts/07-list-keys/listExample";
 import TaskManager from "./core-concepts/08-task-manager/TaskManager";
 import UseStateExample from "./hooks/01-usestate/useStateExample";
 import UseActionState from "./hooks/02-useactionstate/useActionState";
+import UseEffect from "./hooks/03-useEffect/useEffect";
 
 
 // function App() {
@@ -61,7 +62,8 @@ function App(){
   //return <ListExample/>
   //return <TaskManager/>
   //return <UseStateExample/>
-  return <UseActionState/>
+  //return <UseActionState/>
+  return <UseEffect/>
 }
 
 export default App
