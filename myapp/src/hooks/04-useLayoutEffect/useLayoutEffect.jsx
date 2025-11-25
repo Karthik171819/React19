@@ -8,7 +8,7 @@ export default function UseLayoutEffect(){
     })
     return <div>
         <h1>UseLayoutEffect</h1>
-        <button style={{display:"flex", flexDirection:"column", marginBottom:"10px"}} onClick={() => setColor("lightblue")}>Click To Change Color</button>
-        <button style={{display:"flex"}}onClick={() => setColor("green")}>Back To Normal Color</button>
+        <button className="useLayoutEffect"  onClick={() => setColor("lightblue")}>Click To Change Color</button>
+        <button className="useLayoutEffect"  onClick={() => setColor("green")}>Back To Normal Color</button>
     </div>
 }

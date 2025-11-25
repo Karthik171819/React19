@@ -44,3 +44,11 @@
 .bg-color {
   background-color: aqua;
 }
+
+.useLayoutEffect {
+  display: flex;
+  flexDirection: column;
+  marginBottom: 10px;
+  padding: 10px;
+  
+}
