@@ -13,9 +13,11 @@ import EventHandle from "./core-concepts/06-event-handling/eventHandler";
 import SimpleForm from "./core-concepts/06-event-handling/simpleForm";
 import ListExample from "./core-concepts/07-list-keys/listExample";
 import TaskManager from "./core-concepts/08-task-manager/TaskManager";
-import UseStateExample from "./hooks/01-usestate/useStateExample";
-import UseActionState from "./hooks/02-useactionstate/useActionState";
+import UseStateExample from "./hooks/01-useState/useStateExample";
+import UseActionState from "./hooks/02-useActionState/useActionState";
 import UseEffect from "./hooks/03-useEffect/useEffect";
+import UseLayoutEffect from "./hooks/04-useLayoutEffect/useLayoutEffect";
+
 
 
 // function App() {
@@ -63,7 +65,8 @@ function App(){
   //return <TaskManager/>
   //return <UseStateExample/>
   //return <UseActionState/>
-  return <UseEffect/>
+  //return <UseEffect/>
+  return <UseLayoutEffect/>
 }
 
 export default App
