@@ -17,6 +17,7 @@ import UseStateExample from "./hooks/01-useState/useStateExample";
 import UseActionState from "./hooks/02-useActionState/useActionState";
 import UseEffect from "./hooks/03-useEffect/useEffect";
 import UseLayoutEffect from "./hooks/04-useLayoutEffect/useLayoutEffect";
+import UseContextExample from "./hooks/05-useContext/useContext";
 
 
 
@@ -66,7 +67,8 @@ function App(){
   //return <UseStateExample/>
   //return <UseActionState/>
   //return <UseEffect/>
-  return <UseLayoutEffect/>
+  //return <UseLayoutEffect/>
+  return <UseContextExample/>
 }
 
 export default App
