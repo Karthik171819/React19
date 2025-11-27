@@ -1,5 +1,7 @@
 import { createContext, useState, useContext } from "react"
 
+//Head Component to share state
+
 const UserContext = createContext(null);
 export default function UseContextExample() {
     const [user, setUser] = useState({name:"karthik", email:"karthik@gmail.com"});
