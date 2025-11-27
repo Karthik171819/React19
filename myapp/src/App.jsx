@@ -19,6 +19,7 @@ import UseEffect from "./hooks/03-useEffect/useEffect";
 import UseLayoutEffect from "./hooks/04-useLayoutEffect/useLayoutEffect";
 import UseContextExample from "./hooks/05-useContext/useContext";
 import UseRef from "./hooks/06-useRef/useREf";
+import UseMemo from "./hooks/07-useMemo/useMemo";
 
 
 
@@ -70,7 +71,8 @@ function App(){
   //return <UseEffect/>
   //return <UseLayoutEffect/>
   //return <UseContextExample/>
-  return <UseRef/>
+  //return <UseRef/>
+  return <UseMemo/>
 }
 
 export default App
