@@ -20,6 +20,7 @@ import UseLayoutEffect from "./hooks/04-useLayoutEffect/useLayoutEffect";
 import UseContextExample from "./hooks/05-useContext/useContext";
 import UseRef from "./hooks/06-useRef/useREf";
 import UseMemo from "./hooks/07-useMemo/useMemo";
+import UseCallback from "./hooks/08-useCallback/useCallback";
 
 
 
@@ -72,7 +73,8 @@ function App(){
   //return <UseLayoutEffect/>
   //return <UseContextExample/>
   //return <UseRef/>
-  return <UseMemo/>
+  //return <UseMemo/>
+  return <UseCallback/>
   
 }
 
